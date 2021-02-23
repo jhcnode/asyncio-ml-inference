@@ -1,4 +1,4 @@
-# asyncio-ml-inference
+# simple asyncio-ml-inference
 ML Inference based Asyncio 
 
 1. classification model(input = 100 dimension featrue vector, output = label(3 category)) 
