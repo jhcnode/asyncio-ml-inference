@@ -7,7 +7,7 @@ ML Inference based Asyncio
 3. Simple ML Inference 
 
 ## Environments
-Tensorflow-gpu(<2.0)
+Tensorflow-gpu(<=2.0)
 
 ## Train 
 1. [Train](https://github.com/jhcnode/asyncio-ml-inference/blob/main/train/MLP%2BSelu%2B5%20Hidden%20Layer.ipynb)
