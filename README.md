@@ -23,5 +23,5 @@ Tensorflow-gpu(<=2.0)
 
 
 ## Quick start(Windows Only)
-1. Run Server.bat
-2. Run Client.bat
+1. Run [Server.bat](https://github.com/jhcnode/asyncio-ml-inference/blob/main/server.bat)
+2. Run [Client.bat](https://github.com/jhcnode/asyncio-ml-inference/blob/main/client.bat)
