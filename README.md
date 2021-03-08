@@ -5,6 +5,9 @@ ML Inference based Asyncio
 Python(==3.7.6)  
 Tensorflow-gpu(<=2.0)
 
+## Setup
+> pip install requirements.txt
+
 ## Quick start(Windows Only)
 1. Run [Server.bat](https://github.com/jhcnode/asyncio-ml-inference/blob/main/server.bat)
 2. Run [Client.bat](https://github.com/jhcnode/asyncio-ml-inference/blob/main/client.bat)
