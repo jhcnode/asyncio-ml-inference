@@ -1,6 +1,10 @@
 # simple-asyncio-ml-inference
 ML Inference based Asyncio 
 
+## Quick start(Windows Only)
+1. Run [Server.bat](https://github.com/jhcnode/asyncio-ml-inference/blob/main/server.bat)
+2. Run [Client.bat](https://github.com/jhcnode/asyncio-ml-inference/blob/main/client.bat)
+
 ## Features 
 1. classification model(input = 100 dimension featrue vector, output = label(3 category)) 
 2. send and receive data using asyncio
@@ -21,7 +25,3 @@ Tensorflow-gpu(<=2.0)
 ## Run Clients 
 1. > python process.py
 
-
-## Quick start(Windows Only)
-1. Run [Server.bat](https://github.com/jhcnode/asyncio-ml-inference/blob/main/server.bat)
-2. Run [Client.bat](https://github.com/jhcnode/asyncio-ml-inference/blob/main/client.bat)
