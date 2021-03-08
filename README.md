@@ -27,5 +27,5 @@ asyncio==3.4.3
 2. > python socket_server.py  
 
 ## Run Clients 
-1. > python process.py  
-  -> After create 10 clients, send and receive data    
+1. > python process.py 
+-> After create 10 clients, send and receive data    
