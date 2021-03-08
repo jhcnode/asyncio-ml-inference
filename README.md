@@ -5,6 +5,7 @@ ML Inference based Asyncio
 1. classification model(input = 100 dimension featrue vector, output = label(3 category)) 
 2. send and receive data using asyncio
 3. Simple ML Inference 
+4. 1:N communication 
 
 ## Environments
 Tensorflow-gpu(<=2.0)
