@@ -1,5 +1,5 @@
 # simple-asyncio-ml-inference
-ML Inference based Asyncio
+ML Inference based Asyncio(Simple 1:N communication)
 
 ## Environments
 python(==3.x)  
