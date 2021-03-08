@@ -20,3 +20,8 @@ Tensorflow-gpu(<=2.0)
 
 ## Run Clients 
 1. > python process.py
+
+
+## Quick start(Windows Only)
+1. Run Server.bat
+2. Run Client.bat
