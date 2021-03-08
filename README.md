@@ -1,5 +1,9 @@
 # simple-asyncio-ml-inference
-ML Inference based Asyncio 
+ML Inference based Asyncio
+
+## Environments
+Python(==3.7.6)  
+Tensorflow-gpu(<=2.0)
 
 ## Quick start(Windows Only)
 1. Run [Server.bat](https://github.com/jhcnode/asyncio-ml-inference/blob/main/server.bat)
@@ -10,10 +14,6 @@ ML Inference based Asyncio
 2. send and receive data using asyncio
 3. Simple ML Inference 
 4. 1:N communication 
-
-## Environments
-Python(==3.7.6)  
-Tensorflow-gpu(<=2.0)
 
 ## Train 
 1. [Train](https://github.com/jhcnode/asyncio-ml-inference/blob/main/train/MLP%2BSelu%2B5%20Hidden%20Layer.ipynb)
