@@ -3,7 +3,7 @@ ML Inference based Asyncio
 
 ## Environments
 Python(==3.7.6)  
-Tensorflow-gpu(<=2.0)
+Tensorflow-gpu(<=2.0)  
 asyncio==3.4.3
 
 ## Setup
