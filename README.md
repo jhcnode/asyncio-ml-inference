@@ -22,7 +22,7 @@ asyncio==3.4.3
 ## Train 
 1. [Train](https://github.com/jhcnode/asyncio-ml-inference/blob/main/train/MLP%2BSelu%2B5%20Hidden%20Layer.ipynb)
 
-## Serving model 
+## Serve models 
 1. Copy weight files and paste to Directory [./weight/](https://github.com/jhcnode/asyncio-ml-inference/tree/main/weight)
 2. > python socket_server.py  
 
