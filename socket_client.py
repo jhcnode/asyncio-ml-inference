@@ -19,7 +19,7 @@ class log:
 	def __init__(self,userID):
 		self.userid	=userID
 		self.user_position=vector(float(("%0.3f"%random.random())), float(("%0.3f"%random.random())), float(("%0.3f"%random.random())))
-		self.data=[1.0 for i in range(100)]
+		self.data=[random.random() for i in range(100)]
 	def toJSON(self):
 		return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True)	
 class packet:
@@ -64,7 +64,7 @@ async def send_handler(client,loop):
 			await asyncio.sleep(0.1)
 	except:
 			sock.close()
-			loop.close()
+			loop.stop()
 			
 async def receive_handler(client,loop):
 	global count
@@ -74,7 +74,6 @@ async def receive_handler(client,loop):
 		msg = msg.decode()
 		msg = await receive_check(loop,client,msg,'\n')
 		data_list = await decode_data(msg,'\n')
-		print("process1")
 		for result in data_list:
 			count+=1
 			print("%d/result:%s"%(count,result))
@@ -89,8 +88,10 @@ async def echo_client(address,loop):
 		await loop.create_task(receive_handler(sock,loop))
 	except:
 		sock.close()
-		loop.close()
-		
+		loop.stop()
+	sock.close()
+	loop.stop()
+				
 def run():
 	loop = asyncio.get_event_loop()
 	loop.create_task(echo_client(("127.0.0.1", 9000),loop))

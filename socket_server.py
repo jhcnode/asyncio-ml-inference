@@ -80,16 +80,13 @@ class Server:
 					else:
 						msg = await self.receive_check(msg,client)
 						data_list= await self.decode_data(msg)
-						text_log={}
 						for data in data_list:
 							if data['header']=="info":
-								x=json.loads(data['content'])
+								x=json.loads(data['content'])['data']
 								result = await self.loop.run_in_executor(None,infer,self.predictor,x)
 								result = (str(result)+self.delimiter).encode()
 								await self.loop.sock_sendall(client, result)
-								
-								text_log['info']=str(data['content'])	
-								log=str(datetime.today().strftime("%Y/%m/%d %H:%M:%S"))+","+str(text_log['info'])+"\n"
+								log=str(datetime.today().strftime("%Y/%m/%d %H:%M:%S"))+","+str(data['content'])+"\n"
 								print("(info):"+log)
 								f = open("./log.txt", 'a+')
 								f.write(log)
