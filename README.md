@@ -16,3 +16,6 @@ Tensorflow-gpu(<=2.0)
 ## Serving model 
 1. Copy weight files and paste to Directory [./weight/](https://github.com/jhcnode/asyncio-ml-inference/tree/main/weight)
 2. > python socket_server.py  
+
+## Run Clients 
+1. > python process.py
