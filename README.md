@@ -8,6 +8,7 @@ ML Inference based Asyncio
 4. 1:N communication 
 
 ## Environments
+Python(==3.7.6)
 Tensorflow-gpu(<=2.0)
 
 ## Train 
